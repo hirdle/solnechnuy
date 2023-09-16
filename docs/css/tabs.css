@@ -1,0 +1,127 @@
+.tabs {
+  border: 0px solid #e0e0e0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background: #a4cf50;
+  margin: 0;
+  border-bottom: 0px solid #e0e0e0;
+}
+
+.tabs__btn {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: #202020;
+  font-size: 24px;
+  font-family: roboto-bold;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #a4cf50;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.tabs__btn_active {
+  background: #a4cf50;
+  cursor: default;
+  color: white;
+  transition: 0.3s;
+  background-color: rgba(0,0,0,0);
+}
+
+.tabs__btn:not(.tabs__btn_active):hover,
+.tabs__btn:not(.tabs__btn_active):focus {
+  background-color: rgba(0,0,0,0);
+  color: white;
+  transition: 0.3s;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+@media screen and (min-width : 1px) and (max-width : 1279px) {
+
+  .tabs {
+    border: 0px solid #e0e0e0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+  }
+  
+  .tabs__nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background: #a4cf50;
+    margin: 0;
+    border-bottom: 0px solid #e0e0e0;
+  }
+  
+  .tabs__btn {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: #202020;
+    font-size: 18px;
+    font-family: roboto-bold;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #a4cf50;
+    transition: 0.3s;
+    background-color: white;
+  }
+  
+  .tabs__btn_active {
+    background: #a4cf50;
+    cursor: default;
+    color: white;
+    transition: 0.3s;
+    background-color: rgba(0,0,0,0);
+  }
+  
+  .tabs__btn:not(.tabs__btn_active):hover,
+  .tabs__btn:not(.tabs__btn_active):focus {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .tabs__content {
+    padding: 0rem;
+  }
+  
+  .tabs__pane {
+    display: none;
+  }
+  
+  .tabs__pane_show {
+    display: block;
+  }
+
+}

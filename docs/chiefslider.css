@@ -1,0 +1,344 @@
+/*!
+* chiefSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/how-to
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/chiefSlider/blob/main/LICENSE)
+*/
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.slider__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider__item-container {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+  height: 648px;
+  color: #fff;
+}
+
+.slider__item:nth-child(1) .slider__item-content {
+  
+}
+
+.slider__item:nth-child(2) .slider__item-content {
+  
+}
+
+.slider__item:nth-child(3) .slider__item-content {
+  
+}
+
+.slider__item:nth-child(4) .slider__item-content {
+  
+}
+
+.slider__item:nth-child(5) .slider__item-content {
+  
+}
+
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  /*overflow: hidden;*/
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.);
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide='prev'] {
+  left: 0;
+}
+
+.slider__control[data-slide='next'] {
+  right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 101px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+  background-image: url("img/page-2/p2-b3-arrow-left.png");
+}
+
+.slider__control[data-slide='next']::before {
+  background-image: url("img/page-2/p2-b3-arrow-right.png");
+}
+
+/* индикаторы */
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.slider__indicators li.active {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+@media screen and (min-width : 1px) and (max-width : 1279px) {
+
+  .container {
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  .slider__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .slider__item-container {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+  }
+  
+  .slider__item:nth-child(1) .slider__item-content {
+    
+  }
+  
+  .slider__item:nth-child(2) .slider__item-content {
+    
+  }
+  
+  .slider__item:nth-child(3) .slider__item-content {
+    
+  }
+  
+  .slider__item:nth-child(4) .slider__item-content {
+    
+  }
+  
+  .slider__item:nth-child(5) .slider__item-content {
+    
+  }
+  
+  
+  .slider {
+    position: relative;
+  }
+  
+  .slider__container {
+    overflow: hidden;
+  }
+  
+  .slider__wrapper {
+    /*overflow: hidden;*/
+  }
+  
+  .slider__items {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider_disable-transition {
+    transition: none;
+  }
+  
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+  }
+  
+  /* кнопки влево и вправо */
+  
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.);
+  }
+  
+  .slider__control_hide {
+    display: none;
+  }
+  
+  .slider__control[data-slide='prev'] {
+    left: -40px;
+  }
+  
+  .slider__control[data-slide='next'] {
+    right: -40px;
+  }
+  
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 70px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  .slider__control[data-slide='prev']::before {
+    background-image: url("img/page-2/p2-b3-arrow-left.png");
+  }
+  
+  .slider__control[data-slide='next']::before {
+    background-image: url("img/page-2/p2-b3-arrow-right.png");
+  }
+  
+  /* индикаторы */
+  
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  
+  .slider__indicators li.active {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+.p2-slider-img {
+  width: 100%;
+}
+
+}
